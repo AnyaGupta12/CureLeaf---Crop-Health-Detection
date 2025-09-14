@@ -9,7 +9,7 @@ from tensorflow.keras.applications.efficientnet import preprocess_input
 import google.generativeai as genai
 
 # —— CONFIG ——  
-GOOGLE_API_KEY = "AIzaSyCGdbaD3EUYZh6w4kR9prmltAgfWfKgIGA"  
+GOOGLE_API_KEY = ""  
 genai.configure(api_key=GOOGLE_API_KEY)  
 MODEL_NAME = "gemini-2.0-flash"
 
@@ -145,4 +145,5 @@ if data.get("preventive_measures"):
     display_section("Preventive Measures", data["preventive_measures"])
 
 if data.get("next_steps"):
+
     display_section("Recommended Next Steps", data["next_steps"])
